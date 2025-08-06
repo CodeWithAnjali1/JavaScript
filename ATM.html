@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a1{
+            text-align: center;
+        }
+        .center{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+        .a2{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .a3 {
+            display: flex;
+            justify-content: center; 
+            gap: 10px;               
+            margin-top: 20px;
+        }
+
+        .a3 input {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .a3 input:hover{
+            transform: scale(1.1);
+            background-color: rgb(24, 24, 172);
+            color: white;
+        }
+       .center td{
+            padding-right: 30px;
+            padding-bottom: 10px;
+       }
+       .form-box {
+            background-color: pink;
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 9px 9px 20px rgb(175, 44, 66);
+        }
+        td input:hover{
+            transform: scale(1.1);
+        }
+
+</style>
+</head>
+<body>
+    <div class="a1">
+    <h1 style="background-color: rgba(255, 0, 0, 0.301); text-align: center;">Fill The Form To Sign-up</h1>
+    <br><h2 style=" background-color:rgb(24, 24, 172); color: white; border-radius: 50px; width: 50%; margin-left: 25%;">Personal Information</h2>
+    <div class="form-box">
+    <form action="">
+        <table class="center">
+        <tr>
+            <td><label input="fName">First Name</label></td>
+            <td><input type="text"></td>
+            <td><label input="lName">Last Name</label></td>
+            <td><input type="text"></td><tr></tr>
+            </tr><tr></tr><tr></tr><tr></tr>
+        
+            <tr>
+            <td><label input="contact">contact</label></td>
+            <td><input type="number"></td>
+            <td><label input="contact">Other Contact</label></td>
+            <td><input type="number"></td>
+        </tr>
+        
+        <tr>
+            <td><label input="Adress">Address</label></td>
+            <td><input type="text"></td>
+            <td><label input="code">Pin code</label></td>
+            <td><input type="number"></td>
+        </tr>
+        
+        <tr>
+            <td><label input="email">E-mail</label></td>
+            <td><input type="email"></td>
+            <td><label input="password">Password</label></td>
+            <td><input type="password"></td>
+        </tr>
+        
+        <tr>
+            <td><label input="DOB">DOB</label></td>
+            <td><input type="date"></td>
+        </tr>
+        
+        <tr>
+            <td><label input="Gender">Gender :</label></td><br>
+        </tr>
+        
+        <tr>
+            <td>Female<input type="radio"></td>
+            <td>Male<input type="radio"></td>
+        </tr>
+        
+        <tr>
+            <td><label input="city">City</label></td>
+            <td>
+                <select id="city" name="city">
+                    <option value="">--->Select City<---</option>
+                    <option value="Aligarh">Aligarh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Pune">Pune</option>       
+                </select>
+            </td>
+        </tr>
+
+    </table>
+    <div>
+        <br>
+
+        <div class="a3">
+             
+                <input type="reset"><br>
+                <input type="submit">
+
+        </div>    
+              
+        
+</form>
+</div>
+</div>
+</body>
+</html>
